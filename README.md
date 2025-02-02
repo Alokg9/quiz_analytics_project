@@ -1,80 +1,71 @@
-#!/bin/bash
+# Personalized Student Recommendations
 
-echo "#############################################"
-echo "# Personalized Student Recommendations      #"
-echo "#############################################"
+## Overview
+The Personalized Student Recommendations project leverages quiz performance data to generate insightful feedback and tailored study recommendations for students preparing for competitive exams. By analyzing both recent and historical quiz attempts, the system identifies performance gaps, tracks improvement trends, and provides actionable suggestions to enhance student learning outcomes.
 
-echo ""
-echo "## Project Overview"
-echo "This project analyzes quiz performance data to provide personalized recommendations"
-echo "for students preparing for exams. By leveraging historical quiz data, the system"
-echo "identifies weak areas, improvement trends, and suggests specific study topics."
-echo ""
+## Features
+- **Performance Analysis**: Evaluates quiz responses to identify strengths and weaknesses.
+- **Personalized Insights**: Highlights improvement trends and knowledge gaps.
+- **Recommendation Engine**: Suggests topics, question types, and difficulty levels for focused study.
+- **Visual Reports**: Generates insightful charts and summaries.
+- **Predictive Modeling (Bonus)**: Estimates potential NEET exam rank based on historical data.
 
-echo "## Features"
-echo "- Analyzes current and past quiz submissions"
-echo "- Identifies weak areas and performance gaps"
-echo "- Generates personalized study recommendations"
-echo "- Predicts potential NEET exam ranks (bonus feature)"
-echo "- Visualizes student performance trends"
-echo ""
+## Data Sources
+The system processes two key datasets:
+1. **Current Quiz Data**: Contains details of a student's most recent quiz submission.
+2. **Historical Quiz Data**: Aggregates performance data from the last five quizzes for each student.
 
-echo "## Dataset Information"
-echo "1. Current Quiz Data – Contains details of a student's latest quiz submission."
-echo "2. Historical Quiz Data – Includes the last 5 quiz performances for each student."
-echo ""
+## Installation & Setup
+### Prerequisites
+Ensure you have the following installed:
+- Python 3.x
+- pip (Python package manager)
+- Git
 
-echo "## Installation & Setup"
-echo "### Prerequisites"
-echo "Ensure you have the following installed:"
-echo "- Python 3.x"
-echo "- pip"
-echo "- Git"
-echo ""
+### Steps to Setup
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd <repository-name>
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the setup script:
+   ```bash
+   bash setup.sh
+   ```
+4. Execute the main script:
+   ```bash
+   python main.py
+   ```
 
-echo "### Setup Steps"
-echo "1. Clone the repository:"
-echo "   git clone <repository-url>"
-echo "   cd <repository-name>"
-echo ""
-echo "2. Install dependencies:"
-echo "   pip install -r requirements.txt"
-echo ""
-echo "3. Run the setup script:"
-echo "   bash setup.sh"
-echo ""
-echo "4. Execute the main script:"
-echo "   python main.py"
-echo ""
+## Methodology
+1. **Data Processing**: 
+   - Load and preprocess quiz data.
+   - Perform statistical analysis on student performance.
+2. **Insight Generation**:
+   - Detect weak areas and knowledge gaps.
+   - Track improvement trends over time.
+3. **Personalized Recommendations**:
+   - Suggest study materials and topic-wise improvements.
+   - (Optional) Predict NEET rank based on historical performance.
 
-echo "## Approach"
-echo "1. Data Analysis:"
-echo "   - Load and clean quiz data."
-echo "   - Identify student performance patterns by topic, difficulty, and accuracy."
-echo "2. Insights Generation:"
-echo "   - Detect weak areas and improvement trends."
-echo "   - Classify student personas based on strengths and weaknesses."
-echo "3. Recommendation System:"
-echo "   - Suggest topics and question types for improvement."
-echo "   - Optional: Predict NEET exam ranking using a probabilistic model."
-echo ""
+## Usage
+To analyze a specific student's performance, run:
+```bash
+python main.py --student_id 12345
+```
 
-echo "## Example Usage"
-echo "Run the script and input a student ID to generate recommendations:"
-echo "   python main.py --student_id 12345"
-echo ""
+## Expected Outputs
+- **Visual Reports**: Charts highlighting student performance.
+- **Text-Based Insights**: Actionable study recommendations.
+- **Predictive Analysis**: Estimated ranking based on past trends (if enabled).
 
-echo "## Outputs"
-echo "- Visual Reports: Charts showing strengths and weaknesses."
-echo "- Text-Based Insights: Summary of areas to improve."
-echo "- Predictions (Bonus): Estimated NEET rank based on past performance."
-echo ""
+## License
+This project is licensed under the MIT License.
 
-echo "## Submission Requirements"
-echo "- GitHub Repository with source code and README"
-echo "- Screenshots of Visualizations"
-echo "- Demo Video (2-5 minutes explaining the approach and outputs)"
-echo ""
+## Contact
+For any queries or contributions, please reach out via [GitHub Issues](https://github.com/quiz_analytics_project/issues).
 
-echo "## License"
-echo "MIT License"
