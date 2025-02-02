@@ -58,7 +58,7 @@ Ensure you have the following installed:
 ## Usage
 To analyze a specific student's performance, run:
 ```bash
-python main.py --student_id 12345
+python main.py 
 ```
 
 ## Expected Outputs
