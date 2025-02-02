@@ -1,4 +1,6 @@
 # Personalized Student Recommendations
+![Screenshot 2025-02-02 220128](https://github.com/user-attachments/assets/cb9e551a-5355-4fc7-8807-cdb713c044be)
+https://github.com/user-attachments/assets/f2aaab9c-f1d1-4a03-b012-ed556515e331
 
 ## Overview
 The Personalized Student Recommendations project leverages quiz performance data to generate insightful feedback and tailored study recommendations for students preparing for competitive exams. By analyzing both recent and historical quiz attempts, the system identifies performance gaps, tracks improvement trends, and provides actionable suggestions to enhance student learning outcomes.
