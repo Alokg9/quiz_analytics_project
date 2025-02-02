@@ -55,12 +55,6 @@ Ensure you have the following installed:
    - Suggest study materials and topic-wise improvements.
    - (Optional) Predict NEET rank based on historical performance.
 
-## Usage
-To analyze a specific student's performance, run:
-```bash
-python main.py 
-```
-
 ## Expected Outputs
 - **Visual Reports**: Charts highlighting student performance.
 - **Text-Based Insights**: Actionable study recommendations.
